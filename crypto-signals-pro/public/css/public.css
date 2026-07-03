@@ -1,0 +1,258 @@
+.csp-dashboard {
+	direction: rtl;
+	font-family: inherit;
+	text-align: right;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.csp-dashboard * {
+	box-sizing: border-box;
+}
+
+.csp-header {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	margin-bottom: 8px;
+}
+
+.csp-header h2 {
+	margin: 0;
+}
+
+.csp-winrate-badge {
+	background: #eef7ee;
+	color: #1e7a1e;
+	border: 1px solid #bfe3bf;
+	border-radius: 999px;
+	padding: 6px 14px;
+	font-size: 13px;
+	font-weight: 600;
+}
+
+.csp-disclaimer {
+	font-size: 12.5px;
+	color: #777;
+	background: #f7f7f7;
+	border-radius: 8px;
+	padding: 10px 14px;
+	margin: 10px 0 20px;
+}
+
+.csp-toolbar {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 18px;
+	flex-wrap: wrap;
+}
+
+.csp-filter-input,
+.csp-filter-signal {
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid #ddd;
+	font-size: 14px;
+}
+
+.csp-filter-input {
+	flex: 1;
+	min-width: 200px;
+}
+
+.csp-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
+}
+
+.csp-card {
+	border: 1px solid #e3e3e3;
+	border-radius: 12px;
+	padding: 16px;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+	border-top: 4px solid #ccc;
+}
+
+.csp-card.csp-signal-strong_buy,
+.csp-card.csp-signal-buy {
+	border-top-color: #2e9e4c;
+}
+
+.csp-card.csp-signal-hold {
+	border-top-color: #c9a227;
+}
+
+.csp-card.csp-signal-sell,
+.csp-card.csp-signal-strong_sell {
+	border-top-color: #d64545;
+}
+
+.csp-card-head {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 12px;
+	flex-wrap: wrap;
+}
+
+.csp-symbol {
+	font-weight: 800;
+	font-size: 16px;
+}
+
+.csp-name {
+	color: #888;
+	font-size: 13px;
+	flex: 1;
+}
+
+.csp-badge {
+	font-size: 12px;
+	font-weight: 700;
+	padding: 4px 10px;
+	border-radius: 999px;
+	color: #fff;
+}
+
+.csp-badge-strong_buy,
+.csp-badge-buy {
+	background: #2e9e4c;
+}
+
+.csp-badge-hold {
+	background: #c9a227;
+}
+
+.csp-badge-sell,
+.csp-badge-strong_sell {
+	background: #d64545;
+}
+
+.csp-row {
+	display: flex;
+	justify-content: space-between;
+	padding: 4px 0;
+	font-size: 13.5px;
+	color: #444;
+}
+
+.csp-levels {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6px;
+	background: #fafafa;
+	border-radius: 8px;
+	padding: 8px;
+	margin: 10px 0;
+	text-align: center;
+	font-size: 12.5px;
+}
+
+.csp-levels span {
+	display: block;
+	color: #999;
+	margin-bottom: 2px;
+}
+
+.csp-scores {
+	margin: 10px 0;
+}
+
+.csp-score-bar {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 12px;
+	margin-bottom: 6px;
+}
+
+.csp-score-bar span {
+	width: 90px;
+	color: #777;
+	flex-shrink: 0;
+}
+
+.csp-bar-track {
+	flex: 1;
+	background: #eee;
+	border-radius: 999px;
+	height: 8px;
+	overflow: hidden;
+}
+
+.csp-bar-fill {
+	height: 100%;
+	border-radius: 999px;
+}
+
+.csp-bar-positive {
+	background: #2e9e4c;
+}
+
+.csp-bar-neutral {
+	background: #c9a227;
+}
+
+.csp-bar-negative {
+	background: #d64545;
+}
+
+.csp-whale-retail {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	font-size: 12.5px;
+	background: #f5f8ff;
+	border-radius: 8px;
+	padding: 8px;
+	margin-top: 8px;
+}
+
+.csp-whale-retail span {
+	display: block;
+	color: #888;
+}
+
+.csp-divergence {
+	font-size: 12px;
+	color: #4a5aab;
+	margin: 8px 0 0;
+}
+
+.csp-updated {
+	font-size: 11px;
+	color: #aaa;
+	margin: 10px 0 0;
+	text-align: left;
+}
+
+.csp-locked {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px 20px;
+}
+
+.csp-locked-box {
+	text-align: center;
+	max-width: 420px;
+}
+
+.csp-lock-icon {
+	font-size: 40px;
+}
+
+.csp-cta-button {
+	display: inline-block;
+	margin-top: 14px;
+	padding: 10px 24px;
+	background: #2e9e4c;
+	color: #fff !important;
+	border-radius: 8px;
+	text-decoration: none;
+	font-weight: 600;
+}
